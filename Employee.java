@@ -1,44 +1,36 @@
-class Employee {
-    public int employeeID;
-    protected String department;
-    private double salary;
+public class Employee {
 
-    Employee(int employeeID, String department, double salary) {
-        this.employeeID = employeeID;
-        this.department = department;
-        this.salary = salary;
+    static String companyName;
+    private String name;
+    private final int id;
+    private String designation;
+
+    static int totalEmployee = 0;
+
+    public Employee(String name, int id , String designation){
+        this.name = name;
+        this.id = id;
+        this.designation = designation;
+        totalEmployee++;
     }
 
-    public double getSalary() {
-        return salary;
+    public static void displayTotalEmployees(){
+        System.out.println("Total Employees: " + totalEmployee);
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    void displayEmployeeDetails() {
-        System.out.println("Employee ID: " + employeeID);
-        System.out.println("Department: " + department);
-        System.out.println("Salary: $" + salary);
+    public void displayDetails(){
+       if(this instanceof Employee){
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee ID: " + id);
+        System.out.println("Employee Designation: " + designation);
+       }
     }
 
     public static void main(String[] args) {
-        Manager manager = new Manager(101, "HR", 80000.00);
-        manager.displayEmployeeDetails();
-        manager.displayManagerDetails();
+        Employee emp = new Employee("Krishna", 5678, "software engineer ");
+        Employee emp1 = new Employee("Kunal", 8569, " Senior software engineer ");
+        emp.displayDetails();
+        emp1.displayDetails();
+        Employee.displayTotalEmployees();
     }
-}
-
-class Manager extends Employee {
-    String officeNumber;
-
-    Manager(int employeeID, String department, double salary) {
-        super(employeeID, department, salary);
-        this.officeNumber = "B-102";
-    }
-
-    void displayManagerDetails() {
-        System.out.println("Office Number: " + officeNumber);
-    }
 }

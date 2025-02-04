@@ -1,25 +1,31 @@
-class Book {
-    String title;
-    String author;
-    double price;
+public class Book{
+    static String libraryName = "The Library Of Congress";
+    private String title;
+    private String author;
+    private final int isbn;
 
-    Book() {
-        title = "The Alchemist";
-        author = "Paulo Coelho";
-        price = 299.99;
-    }
-
-    Book(String title, String author, double price) {
+    public Book(String title, String author , int isbn){
         this.title = title;
         this.author = author;
-        this.price = price;
+        this.isbn = isbn;
+    }
+
+    public static void displayLibraryName(){
+        System.out.println("The name of Library is: "+ libraryName);
+    }
+
+
+    public void displayDetails(){
+        if(this instanceof Book){
+            System.out.println("Title: " + title);
+            System.out.println("Author: " + author);
+            System.out.println("ISBN: " + isbn);
+        }
     }
 
     public static void main(String[] args) {
-        Book book1 = new Book();
-        Book book2 = new Book("Java Programming", "James Gosling", 499.99);
-
-        System.out.println(book1.title + " by " + book1.author + " - $" + book1.price);
-        System.out.println(book2.title + " by " + book2.author + " - $" + book2.price);
-    }
+        Book book = new Book("Pride and Prejudice" , "Jane Austen" , 451537866);
+        book.displayDetails();
+        Book.displayLibraryName();
+    }
 }
