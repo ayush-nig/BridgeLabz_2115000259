@@ -12,3 +12,4 @@
 <h5>  31 jan 2025 --> Completed Assignment 8 on Java Class and Object</h5>
 <h5>  2 feb 2025 --> Completed Assignment 9 on Java Constructors, Instance vs. Class Variables, Access Modifiers Level 1 Lab Practice</h5>
 <h5>  4 feb 2025 --> Completed Assignment 10 on this, static, final key words and instanceof operator Level 1 Lab Practice </h5>
+<h5>  6 feb 2025 --> Completed Assignment 11 on Object Modelling </h5>
