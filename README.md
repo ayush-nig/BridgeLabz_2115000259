@@ -14,3 +14,5 @@
 <h5>  4 feb 2025 --> Completed Assignment 10 on this, static, final key words and instanceof operator Level 1 Lab Practice </h5>
 <h5>  6 feb 2025 --> Completed Assignment 11 on Object Modelling </h5>
 <h5>  7 feb 2025 --> Completed Assignment 12 on Inheritance </h5>
+<h5>  10 feb 2025 --> Completed Assignment 13 on Encapsulation, Polymorphism, Interface and Abstract Class </h5>
+<h5>  12 feb 2025 --> Completed Assignment 14 on Data Structure - LinkedList </h5>
