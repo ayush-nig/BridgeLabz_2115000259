@@ -16,3 +16,6 @@
 <h5>  7 feb 2025 --> Completed Assignment 12 on Inheritance </h5>
 <h5>  10 feb 2025 --> Completed Assignment 13 on Encapsulation, Polymorphism, Interface and Abstract Class </h5>
 <h5>  12 feb 2025 --> Completed Assignment 14 on Data Structure - LinkedList </h5>
+<h5>  13 feb 2025 --> Completed Assignment 15 on Stack , Queue, HashMap and Hashing Function </h5>
+<h5>  14 feb 2025 --> Completed Assignment 16 on Sorting Algorithms </h5>
+<h5>  16 feb 2025 --> Completed Assignment 17 on Linear Search and Binary Search, StringBuilder, StringBuffer, BufferedReader, FileReader, InputStreamReader </h5>
